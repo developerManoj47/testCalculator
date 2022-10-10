@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>claculato by Manoj Bhatt</title>
+    <!-- -------------- LINK TO USE GOOGLE ICONS ----------------- -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- -------------- LINK OF CUSTOM CSS ----------------- -->
+    <link rel="stylesheet" href="./calc.css">
+</head>
+
+<body>
+    <div class="container-wrapper" id="C-W">
+        <div id="container">
+            <div id="display-wrapper">
+                <div class="display">
+                    <p id="result">0</p>
+                </div>
+            </div>
+            <div id="btn-container-wrapper">
+                <div id="btn-W">
+                    <button id="btn" class="clear">Clear</button>
+                    <button id="btn" class="back">Back</button>
+                    <button id="btn" onclick="displayMore('/')">/</button>
+                    <button id="btn" onclick="displayMore('*')">*</button>
+                </div>
+                <div id="btn-W">
+                    <button id="btn" onclick="displayMore(7)">7</button>
+                    <button id="btn" onclick="displayMore(8)">8</button>
+                    <button id="btn" onclick="displayMore(9)">9</button>
+                    <button id="btn" onclick="displayMore('-')">-</button>
+                </div>
+                <div id="btn-W">
+                    <button id="btn" onclick="displayMore(4)">4</button>
+                    <button id="btn" onclick="displayMore(5)">5</button>
+                    <button id="btn" onclick="displayMore(6)">6</button>
+                    <button id="btn" onclick="displayMore('+')">+</button>
+                </div>
+                <div id="btn-W">
+                    <button id="btn" onclick="displayMore(1)">1</button>
+                    <button id="btn" onclick="displayMore(2)">2</button>
+                    <button id="btn" onclick="displayMore(3)">3</button>
+                    <button id="btn" onclick="displayMore('.')">.</button>
+                </div>
+                <div id="btn-W">
+                    <button id="btn" onclick="displayMore(0)">0</button>
+                    <button id="btn" onclick="displayMore(00)">00</button>
+                    <button id="btn" class="equal-to">=</button>
+                </div>
+            </div>
+        </div>
+        <!-- ---------- wel come button ---------- -->
+        <div id="first-btn">
+            <button id="show-btn">
+                <b>Hey!</b> Are you loking for a calculator then click on me and the calculator will be in front of you
+                <h3>Just Click dude</h3>
+            </button>
+            <button id="thank-you">
+                <h2>Thank you.</h2>
+                <p>Want to go back to Calculator ??</p>
+                <p class="p-2-TY">Then Click Again...</p>
+            </button>
+        </div>
+        <!--   ----------- cover divs ------------------ -->
+        <div id="white-cover">
+        </div>
+        <div id="black-cover">
+        </div>
+        <!-- ------------- designed by and after done sectio ----------------- -->
+        <div id="designed-by">
+            <p>Designed By</p>
+            <p>Manoj Bhatt</p>
+        </div>
+        <div id="after-done">
+            <button id="after-done-btn">
+                <p>After done</p>
+                <p>Click here
+                    <span class="material-symbols-outlined">ads_click</span>
+                </p>
+               
+            </button>
+        </div>
+
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

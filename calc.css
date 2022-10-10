@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+}
+.container-wrapper {
+    width: 1366px;
+    height: 650px;
+    background: #00607a;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+#white-cover {
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    top: -18rem;
+    z-index: 2;
+    border: 10px solid black;
+    background: white;
+    transform: skewY(10deg);
+    animation: animatWhite 4s ease;
+    animation-play-state: paused;
+    /* display: none; */
+}
+@keyframes animatWhite {
+    0%{
+        top: -15rem;
+        z-index: 4;
+    }
+    50%{
+        top: -53rem;
+        z-index: 4;
+    }
+    55%{
+        z-index: 2;
+    }
+    100%{
+        top: -18srem;
+        z-index: 2;
+    }
+}
+/* ----------------------------WHITE COVER REVERS ANIMATION ------------------------ */
+.reversWhite{
+    animation: reversAnimatwhite 4s ease;
+}
+@keyframes reversAnimatwhite {
+    0%{
+        top: -20.5rem;
+        z-index: 2;
+    }
+    50%{
+        z-index: 2;
+    }
+    55%{
+        top: -53rem;
+        z-index: 4;
+    }
+    100%{
+        top: -15rem;
+        z-index: 4;
+    }
+}
+
+#black-cover {
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    bottom: -23rem;
+    z-index: 2;
+    border: 10px solid white;
+    background: black;
+    transform: skewY(10deg);
+    animation: animatBlack 4s ease;
+    animation-play-state: paused;
+    /* display: none; */
+}
+@keyframes animatBlack {
+    0%{
+        bottom: -20rem;
+        z-index: 4;
+    }
+    50%{
+        bottom: -53rem;
+        z-index: 4;
+    }
+    55%{
+        z-index: 2;
+    }
+    100%{
+        bottom: -23rem;
+        z-index: 2;
+    }
+}
+/* ----------------------------black COVER REVERS ANIMATION ------------------------ */
+.reversBlack{
+    animation: reversAnimatBlack 4s ease;
+}
+@keyframes reversAnimatBlack {
+    0%{
+        bottom: -26.5rem ;
+        z-index: 2;
+    }
+    50%{
+        z-index: 2;
+    }
+    55%{
+        bottom: -53rem;
+        z-index: 4;
+    }
+    100%{
+        bottom: -20rem;
+        z-index: 4;
+    }
+}
+/* =========================================================================================== 
+                             styling of first btn 
+============================================================================================ */
+#first-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    width: 55rem;
+    height: 12rem;
+    background: #004052;
+    border: .5rem solid black;
+    border-radius: .6rem;
+    /* display: none; */   
+}
+/* #first-btn #show-btn{
+    display: none;
+} */
+#first-btn button#show-btn , #first-btn button#thank-you  {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: 0 .5rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+/* ----------------------------- do it latter --------------------------- */
+#first-btn button#thank-you {
+    display: none;
+}
+#first-btn button#show-btn h3 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 4px 3px 2px black;
+}
+#first-btn button#thank-you h2{
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    text-shadow: 5px 5px 7px black;
+    margin: 0  0 .5rem -4rem;
+}
+#first-btn button#thank-you p{
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    text-align: right;
+    display: none;
+}
+.p-2-TY {
+    margin-bottom: -3rem;
+}
+/* -------------------------/   do it latter --------------------------- */
+
+/* =========================================================================================== 
+                             styling of container 
+============================================================================================ */
+#container {
+    width: 40rem;
+    height: 50rem;
+    position: absolute;
+    top: 10%;
+    left: 36%;
+    z-index: 3;
+    border: 2px solid #002029;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    background: #00303d;
+    animation: scaleContainer 1s ease;
+    animation-play-state: paused;
+    /* display: none; */
+}
+@keyframes scaleContainer {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+reversContainer {
+    animation: reverseScaleContainer 2s ease;
+}
+@keyframes reverseScaleContainer {
+    0%{
+        transform: rotate(-2deg);
+    }
+    2%{ transform: rotate(2deg);}
+    3%{ transform: rotate(-2deg);}
+    4%{ transform: rotate(2deg);}
+    5%{ transform: rotate(-2deg);}
+    6%{ transform: rotate(2deg);}
+    7%{ transform: rotate(-2deg);}
+    8%{ transform: rotate(2deg);}
+    9%{ transform: rotate(-2deg);}
+    10%{ transform: rotate(2deg);}
+    11%{ transform: rotate(2deg);}
+    12%{ transform: rotate(-2deg);}
+    13%{ transform: rotate(2deg);}
+    14%{ transform: rotate(-2deg);}
+    15%{ transform: rotate(2deg);}
+    16%{ transform: rotate(-2deg);}
+    17%{ transform: rotate(2deg);}
+    18%{ transform: rotate(-2deg);}
+    19%{ 
+        transform: rotate(2deg);
+    }
+    30%{
+        opacity: 1;
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    70%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+        opacity: 0;
+    }
+}
+
+/* =========================================================================================== 
+                             styling of display box 
+============================================================================================ */
+#display-wrapper {
+    width: 100%;
+    height: 11rem;
+}
+.display{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: .5rem;
+    box-shadow: inset 5px 5px 15px  #00303d,
+                inset -5px -5px 15px  white,
+                5px 5px 25px rgba(255, 255, 255, 0.3),
+                -5px -5px 25px #00303d;
+                
+            }
+#result {
+    margin-top: 5.5rem;
+    font-size: 3rem;
+    text-align: right;
+    overflow: hidden;
+}
+/* =========================================================================================== 
+                             styling of container wrapper  
+============================================================================================ */
+#btn-container-wrapper {
+    width: 100%;
+    height: 35.5rem;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+#btn-container-wrapper div#btn-W:not(:nth-child(5)) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-container-wrapper #btn {
+    width: 7rem;
+    height: 5rem;
+    border-radius: .8rem;
+    background:#00607a;
+    font-size: 2.3rem;
+    font-weight: 700;
+    border: none;
+    box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.3),
+                inset -5px -5px 20px  #00303d,
+                 5px 5px 25px #00303d,
+                -5px -5px 25px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+#btn-container-wrapper div#btn-W:nth-child(5) button:where(:nth-child(2), :nth-child(3)){
+    margin-left: 2.2rem;
+}
+#btn-container-wrapper div#btn-W:nth-child(5) button:nth-child(3){
+    width: 16rem;
+    background: #00303d;
+}
+/* =========================================================================================== 
+                             styling of designed-by div 
+============================================================================================ */
+#designed-by{
+    background: white;
+    position: absolute;
+    top: 38rem; 
+    left: 8rem;
+    animation: designedAnimation 2s linear;
+    animation-play-state: paused;
+}
+@keyframes designedAnimation {
+    0%{
+        left: 30rem;
+        opacity: 0;
+    }
+    100%{
+        left: 8rem;
+        opacity: 1;
+    }
+}
+.reversdesign{
+    animation: reverseDesigAnimation 1s linear;
+}
+@keyframes reverseDesigAnimation {
+    0%{
+        left: 8rem;
+        opacity: 1;
+    }
+    100%{
+        left: 30rem;
+        opacity: 0;
+    }
+}
+#designed-by , #after-done {
+    width: 30rem;
+    height: 15rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    
+}
+#designed-by p, #after-done p  {
+    width: 60%;
+}
+#designed-by p:nth-child(1), #after-done p:nth-child(1){
+    margin: 4rem 0 0 4rem;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+#designed-by p:nth-child(2), #after-done p:nth-child(2){
+    margin: -1rem 0 0 9rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+/* =========================================================================================== 
+                             styling of after done div 
+============================================================================================ */
+#after-done{
+    /* background: #00303d; */
+    background: black;
+    position: absolute;
+    top: 9rem; 
+    right: 8rem;
+    animation: afterDoneAnimation 2s linear;
+    animation-play-state: paused;
+}
+@keyframes afterDoneAnimation {
+    0%{
+        right: 35rem;
+        opacity: 0;
+    }
+    100%{
+        right: 8rem;
+        opacity: 1;
+    }
+}
+.reverseafter{
+    animation: reversAfterDoneAnimation 1s linear;
+}
+@keyframes reversAfterDoneAnimation{
+    0%{
+        right: 8rem;
+        opacity: 1;
+    }
+    100%{
+        right: 35rem;
+        opacity: 0;
+    }
+}
+#after-done button#after-done-btn{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+}
+#after-done p:nth-child(1){
+    margin: 5rem 0 0  2rem;
+}
+#after-done p:nth-child(2){
+    margin-top: -0.5rem;
+}
